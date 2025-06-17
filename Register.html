@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Give - Khaya Family Church</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+    }
+    .gold {
+      color: #d4af37;
+    }
+    .bg-gold {
+      background-color: #d4af37;
+    }
+    .bg-dark {
+      background-color: #111;
+    }
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+    .hover-scale:hover {
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+
+<body class="font-sans">
+  <header class="p-4 flex items-center justify-between border-b border-gray-800 bg-dark">
+    <div class="flex items-center gap-3">
+      <img src="images/logo.png" alt="Church Logo" class="h-12 w-12 rounded-full">
+      <h1 class="text-2xl font-bold gold">Khaya Family Church</h1>
+    </div>
+    <nav class="hidden md:flex space-x-6">
+      <a href="index.html" class="hover:text-gold">Home</a>
+      <a href="about.html" class="hover:text-gold">About</a>
+      <a href="give.html" class="hover:text-gold font-bold">Give</a>
+      <a href="sermons.html" class="hover:text-gold">Sermons</a>
+      <a href="events.html" class="hover:text-gold">Events</a>
+      <a href="contact.html" class="hover:text-gold">Contact</a>
+    </nav>
+    <button class="md:hidden text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </header>
+
+  <main class="px-4 py-8 max-w-2xl mx-auto">
+    <h2 class="text-3xl font-bold gold mb-6">Weekly Service Registration</h2>
+    <form action="submit_registration.php" method="POST" class="space-y-6">
+      <div>
+        <label class="block mb-1" for="name">Name</label>
+        <input type="text" id="name" name="name" required class="w-full px-3 py-2 bg-gray-800 border border-gray-600 rounded">
+      </div>
+      <div>
+        <label class="block mb-1" for="surname">Surname</label>
+        <input type="text" id="surname" name="surname" required class="w-full px-3 py-2 bg-gray-800 border border-gray-600 rounded">
+      </div>
+      <div>
+        <label class="block mb-1" for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required class="w-full px-3 py-2 bg-gray-800 border border-gray-600 rounded">
+      </div>
+      <div>
+        <label class="block mb-1" for="address">Address</label>
+        <input type="text" id="address" name="address" required class="w-full px-3 py-2 bg-gray-800 border border-gray-600 rounded">
+      </div>
+      <div>
+        <span class="block mb-1">Gender</span>
+        <label class="inline-flex items-center mr-4">
+          <input type="radio" name="gender" value="Male" required class="form-radio text-gold">
+          <span class="ml-2">Male</span>
+        </label>
+        <label class="inline-flex items-center">
+          <input type="radio" name="gender" value="Female" required class="form-radio text-gold">
+          <span class="ml-2">Female</span>
+        </label>
+      </div>
+      <div>
+        <span class="block mb-1">Are you a:</span>
+        <label class="inline-flex items-center mr-4">
+          <input type="radio" name="status" value="Visitor" required class="form-radio text-gold">
+          <span class="ml-2">Visitor</span>
+        </label>
+        <label class="inline-flex items-center">
+          <input type="radio" name="status" value="Member" required class="form-radio text-gold">
+          <span class="ml-2">Member</span>
+        </label>
+      </div>
+      <button type="submit" class="bg-gold text-black px-6 py-2 rounded hover:bg-yellow-500">Submit</button>
+    </form>
+  </main>
+
+  <footer class="text-center p-6 border-t border-gray-700 mt-8">
+    <p class="text-sm">&copy; 2025 Khaya Family Church. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

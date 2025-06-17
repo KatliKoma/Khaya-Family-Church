@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Give - Khaya Family Church</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+    }
+    .gold {
+      color: #d4af37;
+    }
+    .bg-gold {
+      background-color: #d4af37;
+    }
+    .bg-dark {
+      background-color: #111;
+    }
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+    .hover-scale:hover {
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+
+<body class="font-sans">
+  <header class="p-4 flex items-center justify-between border-b border-gray-800 bg-dark">
+    <div class="flex items-center gap-3">
+      <img src="images/logo.png" alt="Church Logo" class="h-12 w-12 rounded-full">
+      <h1 class="text-2xl font-bold gold">Khaya Family Church</h1>
+    </div>
+    <nav class="hidden md:flex space-x-6">
+      <a href="index.html" class="hover:text-gold">Home</a>
+      <a href="about.html" class="hover:text-gold">About</a>
+      <a href="give.html" class="hover:text-gold font-bold">Give</a>
+      <a href="sermons.html" class="hover:text-gold">Sermons</a>
+      <a href="events.html" class="hover:text-gold">Events</a>
+      <a href="contact.html" class="hover:text-gold">Contact</a>
+    </nav>
+    <button class="md:hidden text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </header>
+
+  <main class="py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <h1 class="text-3xl md:text-4xl font-bold mb-6 text-center gold">Support Our Ministry</h1>
+      <p class="text-xl text-gray-300 mb-10 text-center max-w-2xl mx-auto">"Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver." - 2 Corinthians 9:7</p>
+      
+      <div class="bg-dark rounded-lg overflow-hidden shadow-lg mb-10">
+        <div class="p-6 border-b border-gray-800">
+          <h2 class="text-2xl font-bold mb-4">Give Online</h2>
+          <p class="text-gray-300 mb-6">Select your giving type and amount below.</p>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <button class="bg-gold text-black font-bold py-3 px-4 rounded hover:bg-yellow-500">One-Time Gift</button>
+            <button class="bg-gray-800 border border-gray-700 font-bold py-3 px-4 rounded hover:bg-gray-700">Recurring Gift</button>
+          </div>
+          
+          <div class="mb-6">
+            <h3 class="text-lg font-bold mb-3">Select Giving Type</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <button class="bg-gray-800 hover:bg-gray-700 border border-gray-700 py-3 px-4 rounded text-left">
+                <div class="font-bold">Tithe</div>
+                <div class="text-sm text-gray-400">10% of your income</div>
+              </button>
+              <button class="bg-gray-800 hover:bg-gray-700 border border-gray-700 py-3 px-4 rounded text-left">
+                <div class="font-bold">Offering</div>
+                <div class="text-sm text-gray-400">Free-will giving</div>
+              </button>
+              <button class="bg-gray-800 hover:bg-gray-700 border border-gray-700 py-3 px-4 rounded text-left">
+                <div class="font-bold">Missions</div>
+                <div class="text-sm text-gray-400">Support our outreach</div>
+              </button>
+              <button class="bg-gray-800 hover:bg-gray-700 border border-gray-700 py-3 px-4 rounded text-left">
+                <div class="font-bold">Building Fund</div>
+                <div class="text-sm text-gray-400">Facility expansion</div>
+              </button>
+            </div>
+          </div>
+          
+          <div class="mb-6">
+            <h3 class="text-lg font-bold mb-3">Enter Amount (ZAR)</h3>
+            <div class="grid grid-cols-4 gap-2 mb-4">
+              <button class="bg-gray-800 hover:bg-gray-700 border border-gray-700 py-2 rounded">R100</button>
+              <button class="bg-gray-800 hover:bg-gray-700 border border-gray-700 py-2 rounded">R200</button>
+              <button class="bg-gray-800 hover:bg-gray-700 border border-gray-700 py-2 rounded">R500</button>
+              <button class="bg-gray-800 hover:bg-gray-700 border border-gray-700 py-2 rounded">R1000</button>
+            </div>
+            <input type="number" placeholder="Or enter custom amount" class="w-full bg-gray-800 border border-gray-700 rounded py-3 px-4">
+          </div>
+          
+          <button class="w-full bg-gold hover:bg-yellow-500 text-black font-bold py-3 px-4 rounded">
+            Continue to Payment
+          </button>
+        </div>
+        
+        <div class="p-6 bg-black bg-opacity-50">
+          <h3 class="text-lg font-bold mb-3">Other Ways to Give</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-gray-800 p-4 rounded">
+              <h4 class="font-bold mb-2">Bank Transfer</h4>
+              <p class="text-sm text-gray-400">Khaya Family Church<br>Bank: Standard Bank<br>Acc: 1234567890<br>Branch: 123456</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded">
+              <h4 class="font-bold mb-2">In Person</h4>
+              <p class="text-sm text-gray-400">Give during our Sunday services at the offering box</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded">
+              <h4 class="font-bold mb-2">Mobile Payment</h4>
+              <p class="text-sm text-gray-400">SnapScan or Zapper code available at church</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center text-gray-400">
+        <p>All donations are tax deductible. Receipts provided upon request.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-black py-12 border-t border-gray-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4 gold">Khaya Family Church</h3>
+          <p class="text-gray-400">A place of hope, healing, and transformation.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="about.html" class="text-gray-400 hover:text-gold">About Us</a></li>
+            <li><a href="sermons.html" class="text-gray-400 hover:text-gold">Sermons</a></li>
+            <li><a href="events.html" class="text-gray-400 hover:text-gold">Events</a></li>
+            <li><a href="give.html" class="text-gray-400 hover:text-gold">Give</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-4">Connect</h4>
+          <ul class="space-y-2">
+            <li><a href="contact.html" class="text-gray-400 hover:text-gold">Contact Us</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-gold">Facebook</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-gold">Instagram</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-gold">YouTube</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-4">Location</h4>
+          <p class="text-gray-400">32 Malete Street<br>Katlehong, Gauteng 14<br>South Africa</p>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500">
+        <p>&copy; 2025 Khaya Family Church. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
